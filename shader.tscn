@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://dp6ud2wtry2gj"]
+
+[ext_resource type="Shader" path="res://waves.gdshader" id="1_rkai7"]
+[ext_resource type="Texture2D" uid="uid://7qilxsrev5mv" path="res://assets/black Texture 480x720.png" id="2_rqg26"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_kn5jl"]
+shader = ExtResource("1_rkai7")
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_kn5jl")
+position = Vector2(579, 360)
+texture = ExtResource("2_rqg26")
+region_enabled = true
+region_rect = Rect2(0, 0, 1152, 720)
